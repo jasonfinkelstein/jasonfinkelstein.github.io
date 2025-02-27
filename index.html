@@ -4,17 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Finkelstein</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <header>
+        <a href="index.html"></a>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container" id="about">
+        <h1>Hi! I'm Jason, a full-stack JavaScript developer.</h1>
+        <p>I'm a full-stack web developer with an unconventional path into tech. I originally studied biology with plans to go to medical school, and after graduating, I worked in a medical reference lab analyzing samples and tracking infection trends in New York. But while prepping for the MCAT, I had a realization—I wasn’t pursuing medicine for the right reasons. That’s when I decided to follow a long-time interest in software development, and I haven’t looked back since. Now, I build web applications that blend logic, creativity, and problem-solving, and I love every part of it. </p>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="/about">About Me</a></li>
-            <li><a href="/projects">My Projects</a></li>
-            <li><a href="/contact">Contact Me</a></li>
-        </ul>
-    </nav>
-    <h1>Hi! I'm Jason.</h1>
-    <p>Take a look at my work below</p>
+    <div class="container" id="projects">
+        <h1>Featured Projects</h1>
+        
+        <div class="project">
+            <h2>Escape From Tarkov Ammo App</h2>
+            <div class="project-desc">
+                <p>A small web app using the Tarkov.dev API allowing users to search for and filter through the available ammunition in the game Escape From Tarkov.</p>
+                <img src="./imgs/eft-ammo-app.png" alt="EFT Ammo App" class="project-img">
+            </div>
+        </div>
+
+        <div class="project-m">
+            <h2>NASA Mars Mission</h2>
+            <div class="project-desc">
+                <p>A website that informs "astronauts" about the mission to Mars. The site accesses the NASA API and was created using React, while also utilizing React Router for routing functionality, and  Bootstrap for CSS design.</p>
+                <img src="./imgs/mars-site.png" alt="Mars Mission Site" class="project-img">
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Other project</h3>
+            <p>*Small description here*</p>
+        </div>
+
+    </div>
+
+    <div class="container" id="education">
+        <div>
+            <h1>My Education</h1>
+            <div class="education">
+                <ul>
+                    <li>Noble Desktop Software Engineering Certificate</li>
+                    <li>New York University Tandon Bridge - Computer Science</li>
+                    <li>Stony Brook University - B.S. in Biological Sciences</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="contact">
+
+            <div>
+                <a href="https://github.com/jasonfinkelstein" target="_blank" rel="noopener noreferrer">
+                    <img src="./imgs/github-mark/github-mark-white.svg" alt="Github Link" width="40px" height="40px">
+                </a>
+            </div>
+
+            <div class="email">
+                <p>Feel free to reach out!</p>
+                <p>jason@finkmail.net</p>
+            </div>
+
+            <div>
+                <a href="">
+                    <a href="https://www.linkedin.com/in/jason-finkelstein-600155222/" target="_blank" rel="noopener noreferrer">
+                        <img src="./imgs/in-logo/InBug-White.png" alt="LinkedIn Link" width="40px" height="40px">
+                    </a>
+                </a>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
