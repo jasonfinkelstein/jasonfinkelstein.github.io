@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #2c2c2c, #0b142c, #2c2c2c);
+    color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+    line-height: 1.6;
+    
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.container {
+    margin: 100px auto 400px auto;
+    max-width: 1000px;
+    padding: 60px 20px;
+}
+
+p {
+    font-size: 24px;
+    max-width: 800px;
+}
+
+.project-m {
+    margin: 100px 0;
+}
+
+.project-img {
+    width: 500px;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(145, 145, 145, 0.2);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(65, 65, 65, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 25px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.education li {
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    padding: 15px;
+    background-color: #222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.email {
+    text-align: center;
+}
+
+.email p {
+    font-size: 15px;
+}
+
+.project-desc {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, .project-desc {
+    animation: fadeIn 0.8s ease-in-out;
+}
